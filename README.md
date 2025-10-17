@@ -43,9 +43,9 @@ While working with these models, I found the need for a couple of utility tools.
 
 *   **Safetensors Metadata Inspector (inspect_safetensors.py):** 
 
-    *Problem:* Community-provided model files (like LoRAs) often have incorrect or incomplete tags, making it difficult to verify their compatibility and training data.
-    *Solution:* This is a lightweight Python script that extracts the full metadata from a .safetensors file and saves it as a structured .json file for easy inspection. This allows for quick verification of a model's base architecture (e.g., SD1.5 vs. SDXL), training keywords, and other critical information before use.
-    *Usage:*
+    *   *Problem:* Community-provided model files (like LoRAs) often have incorrect or incomplete tags, making it difficult to verify their compatibility and training data.
+    *   *Solution:* This is a lightweight Python script that extracts the full metadata from a .safetensors file and saves it as a structured .json file for easy inspection. This allows for quick verification of a model's base architecture (e.g., SD1.5 vs. SDXL), training keywords, and other critical information before use.
+    *   *Usage:*
     ```
     python inspect_safetensors.py /path/to/your/model.safetensors
     ```
