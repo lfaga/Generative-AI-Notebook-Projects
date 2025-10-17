@@ -40,3 +40,14 @@ While working with these models, I found the need for a couple of utility tools.
 *   **Security Utility: `.pt` to `.safetensors` Converter:** A simple script to batch-convert `.pt` model files to the more secure `.safetensors` format. I wrote this after not finding a simple, standalone tool for the task.
     **Only run this tool in a sandboxed environment, like Colab or a Virtual Machine, the process of converting the .pt file itself can trigger the malicious code (if any), then you can use the .safetensors safely in any environment.**
     *   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lfaga/Generative-AI-Notebook-Projects/blob/main/Pt2Safetensors.ipynb)
+
+*   **Safetensors Metadata Inspector (inspect_safetensors.py):** 
+
+    *Problem:* Community-provided model files (like LoRAs) often have incorrect or incomplete tags, making it difficult to verify their compatibility and training data.
+    *Solution:* This is a lightweight Python script that extracts the full metadata from a .safetensors file and saves it as a structured .json file for easy inspection. This allows for quick verification of a model's base architecture (e.g., SD1.5 vs. SDXL), training keywords, and other critical information before use.
+    *Usage:*
+    ```
+    python inspect_safetensors.py /path/to/your/model.safetensors
+    ```
+
+    * [View Source](https://github.com/lfaga/Generative-AI-Notebook-Projects/blob/main/inspect_safetensors.py)
