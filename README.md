@@ -51,3 +51,7 @@ While working with these models, I found the need for a couple of utility tools.
     ```
 
     * [View Source](https://github.com/lfaga/Generative-AI-Notebook-Projects/blob/main/inspect_safetensors.py)
+
+*   **Windows Safetensors Metadata Viewer:**
+    I created a windows application to visualize the metadata directly from the .safetensors file, with a user-friendly interface in C#/WPF. It presents the data in a hierarchical structure and allows to sort and copy any value. 
+    * [Visit the repository](https://github.com/lfaga/safetensors_metadata_viewer).
